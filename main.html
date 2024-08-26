@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Main </title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            #txt_welcome {
+                text-align: center; 
+                margin-bottom: 50px;
+            }
+
+            .card {
+                text-align: center;
+            }
+
+            .card_title {
+                font-size: 20px;
+            }
+
+            .card_button {
+                font-size: 25px;
+                width: 150px;
+                height: 30px;
+            }
+
+            .card_img {
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Young Jae Lim Portpolio Page</h1>
+        <div id="txt_welcome">
+            개발자 임영재 입니다. <br>
+            저의 프로젝트들을 소개합니다.
+            <br>
+            <br>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr;">
+            <div class="card">
+                <img class="card_img" src="./img1/tennis.png">
+                <p class="card_title"> 테니스 라켓 쇼핑몰 홈페이지 </p>
+                <input class="card_button" type="button" value="order" 
+                    onclick="location.href='./tennis.html'">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img1/game.png">
+                <p class="card_title"> 모바일 게임 프로필 </p>
+                <input class="card_button" type="button" value="order" onclick="location.href='./gameprofile.html'">
+            </div>
+            <div class="card">
+                <img class="card_img" src="./img1/hotel.png">
+                <p class="card_title"> 호텔 예약 사이트 </p>
+                <input class="card_button" type="button" value="order" onclick="location.href='./hotelreservation.html'">
+            </div>
+        </div>
+    </body>
+</html>
